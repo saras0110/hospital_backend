@@ -1,0 +1,6 @@
+/* Simple styling for hospital app */
+body { background: #f8fafc; }
+.card { box-shadow: 0 1px 6px rgba(20,20,30,0.05); }
+pre { white-space: pre-wrap; word-break: break-word; background: #fff; padding: .5rem; border-radius: .25rem;}
+.doctor-card img { width:60px; height:60px; object-fit:cover; border-radius:6px; margin-right:10px;}
+.small-muted { font-size: .85rem; color: #6b7280; }
