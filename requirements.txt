@@ -1,0 +1,8 @@
+Flask==2.2.5
+Flask-Cors==3.0.10
+Flask-SQLAlchemy==3.0.3
+PyJWT==2.8.0
+Werkzeug==2.2.3
+psycopg2-binary==2.9.7
+python-dotenv==1.0.0
+gunicorn==20.1.0
