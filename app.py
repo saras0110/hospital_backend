@@ -20,7 +20,7 @@ def create_app():
 
     # Init
     db.init_app(app)
-    CORS(app, resources={r"/api/*": {"origins": "*"}})
+    CORS(app, resources={r"/api/*": {"origins": os.environ.get('FRONTEND_URL', '*')}})
 
     # Blueprints
     app.register_blueprint(auth_bp, url_prefix='/api')
@@ -39,3 +39,4 @@ def create_app():
 
 if __name__ == '__main__':
     create_app().run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+
